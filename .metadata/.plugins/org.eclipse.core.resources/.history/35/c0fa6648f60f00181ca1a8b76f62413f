@@ -1,0 +1,18 @@
+package com.KeximBank.master;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class NewRoleForm {
+	@FindBy (id = "txtRname") WebElement rName;
+	
+	@FindBy (id = "txtRDesc") WebElement rDesc;
+	
+	@FindBy (id = "lstRtypeN") WebElement rType;
+	
+	@FindBy (id = "btninsert") WebElement roleSubmitBtn;
+	
+	@FindBy (id = "Btn_Reset") WebElement roleResetBtn;
+	
+	@FindBy (id = "Btn_cancel") WebElement roleCanelBtn;
+}

@@ -1,0 +1,17 @@
+package com.KeximBank.properties;
+
+import com.KeximBank.master.Liberary;
+
+public class BasicScript {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Liberary lib = new Liberary();
+		
+		lib.openApp();
+		lib.quitBrowser();
+
+	}
+
+}

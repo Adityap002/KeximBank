@@ -1,0 +1,73 @@
+package com.KeximBank.master;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Liberary {
+	public static WebDriver driver;
+	public static String expectedValue;
+	public static String actualValue;
+	public static Alert alert;
+	public static Properties prop;
+	public static FileInputStream fis;
+	
+	public void openApp() throws IOException{
+		//Declare and load properties file
+		String filePath = "G:\\KeximBank\\KeximBank\\src\\com\\KeximBank\\properties\\KeximBankOR.properties";
+		
+		prop = new Properties();
+		fis = new FileInputStream(filePath);
+		
+		prop.load(fis);
+		
+		String expectedValue = "KEXIM Bank";
+		
+		//Instantiated FireFox browser
+		driver = new FirefoxDriver();
+		
+		//Maximize browser
+		driver.manage().window().maximize();
+		
+		//Launch Application
+		driver.get(prop.getProperty("URL"));
+		
+		String actualValue = driver.findElement(By.xpath(prop.getProperty("launchpage"))).getText();
+		
+		if(expectedValue.equals(actualValue)){
+			System.out.println("Application successfully launch");
+		} else{
+			System.out.println("Application not launch need to check");
+		}
+	}
+	
+	public void adminLogin(String username, String password){
+		
+		
+		
+		driver.findElement(By.id(prop.getProperty("uName"))).sendKeys(username);
+		driver.findElement(By.id(prop.getProperty("uPwd"))).sendKeys(password);
+		driver.findElement(By.id(prop.getProperty("loginBtn"))).click();
+		
+		String expectedValue = "Welcome to Admin";
+		String actualValue = driver.findElement(By.xpath(prop.getProperty("actualScript"))).getText();
+		System.out.println(actualValue);
+		
+		if (actualValue.equals(expectedValue)){
+			System.out.println("Admin successfully login");
+		}else{
+			System.out.println("Error in login");
+		}
+	}
+	
+	public void quitBrowser() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.quit();
+		
+	}
+}

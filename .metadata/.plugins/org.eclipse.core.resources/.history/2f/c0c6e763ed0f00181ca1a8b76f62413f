@@ -1,0 +1,11 @@
+package com.KeximBank.master;
+
+public class RolesHP {
+	//Element properties
+	
+	//role Home page button
+	@FindBy()
+	WebElement roleHomeBtn;
+	//new Role Button
+
+}

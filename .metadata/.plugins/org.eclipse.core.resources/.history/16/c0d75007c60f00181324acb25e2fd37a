@@ -1,0 +1,11 @@
+#Application URL
+URL = http://srssprojects.in/home.aspx
+
+#Home page
+launchpage = //span[text()='KEXIM Bank']
+
+#Home page admin login
+uName = txtuId
+uPwd = txtPword
+loginBtn = login
+

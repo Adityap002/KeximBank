@@ -1,0 +1,21 @@
+package com.KeximBank.master;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class ExePom {
+	
+	public void pom(){
+		String url = "http://srssprojects.in/home.aspx";
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		
+		driver.get(url);
+		
+		AdminHP adminHomePage = PageFactory.initElements(driver, AdminHP.class);
+		KeximBankHP KeximHP = PageFactory.initElements(driver, KeximBankHP.class);
+		RolesHP rolesHomePage = PageFactory.initElements(driver, RolesHP.class);
+	}
+
+}

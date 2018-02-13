@@ -1,0 +1,36 @@
+#Application URL
+URL = http://srssprojects.in/home.aspx
+
+#Home page
+launchpage = //span[text()='KEXIM Bank']
+
+#Home page admin login
+uName = txtuId
+uPwd = txtPword
+loginBtn = login
+actualScript = html/body/table/tbody/tr/td/table/tbody/tr[4]/td/table/tbody/tr[1]/td[4]/strong/font/font
+
+#adminHP
+brnachesBtn = //a[@href='admin_banker_master.aspx']
+
+#Brnaches page
+newBrnachBtn = BtnNewBR
+
+#Logout
+logout = //a[@href='home.aspx']
+
+#Create New Branches Page
+BranchName = txtbName
+Address1 = txtAdd1
+ZipCode = txtZip
+
+Select Box
+Country = lst_counrtyU
+
+Select Box 
+State = id = lst_stateI
+
+Select Box
+City = id = lst_cityI
+
+SubmitBtn = id = btn_insert
