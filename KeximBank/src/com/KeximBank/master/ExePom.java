@@ -64,7 +64,7 @@ public class ExePom {
 		//Click on New Emp button
 		empHomePage.clickOnNewEmp();
 		
-		//Create new Roles 
+		//Create new Roles from the admin 
 		newEmpFormPage.enterEmpName("Pappu");
 		newEmpFormPage.enterEmpPwd("@123Pappu");
 		newEmpFormPage.enterEmpRoles("IT Head");
