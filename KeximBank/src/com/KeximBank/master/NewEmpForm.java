@@ -9,7 +9,7 @@ public class NewEmpForm {
 	@FindBy(id = "txtUname")
 	WebElement eName;
 	
-	@FindBy(id = "txtUname")
+	@FindBy(id = "txtLpwd")
 	WebElement ePwd;
 	
 	@FindBy(id = "lst_Roles")
