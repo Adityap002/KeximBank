@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class EmpHP {
 	// Element property
-	// Emp home button
+	// Emp home button for POM
 	@FindBy(xpath = "//a[@href='adminflow.aspx']")
 	WebElement empHomeBtn;
 

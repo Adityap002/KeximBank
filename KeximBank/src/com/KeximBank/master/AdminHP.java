@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 public class AdminHP {
 	
 	//Element properties
-	//Branches element
+	//Branches element for POM
 	@FindBy (xpath = "//a[@href='admin_banker_master.aspx']")
 	WebElement branchesBtn;
 	
