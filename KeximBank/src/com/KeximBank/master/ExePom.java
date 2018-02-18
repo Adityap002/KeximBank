@@ -41,7 +41,7 @@ public class ExePom {
 		
 		driver.quit();
 	}
-	
+	/*
 	@Test
 	public void pomEmp(){
 		String url = "http://srssprojects.in/home.aspx";
@@ -78,6 +78,6 @@ public class ExePom {
 		empHomePage.clickOnHomeBtn();
 		
 		driver.quit();
-	}
+	}*/
 
 }
