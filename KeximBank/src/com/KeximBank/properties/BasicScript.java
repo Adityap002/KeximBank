@@ -7,7 +7,6 @@ import com.KeximBank.master.Liberary;
 public class BasicScript {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		// TODO Auto-generated method stub
 		
 		Liberary lib = new Liberary();
 		
